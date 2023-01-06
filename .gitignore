@@ -1,6 +1,17 @@
 # Compiled class file
 *.class
 
+# [IDE] clipse, STS4 , Intellij
+.settings
+bin
+target
+
+.classpath
+.factorypath
+.progect
+
+.IDE
+
 # Log file
 *.log
 
