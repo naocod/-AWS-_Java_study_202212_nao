@@ -30,7 +30,7 @@ public class Main {
 		
 		System.out.println("모든 장비에서 10과 0을 나누기");
 		for(Equipment eq : equipments) {
-			Calculator c = (Calculator) eq; 
+			Calculator c = (Calculator) eq; // 다운캐스팅 시키고 나서 업캐스팅
 			double result = c.division(10, 0);
 			System.out.println("결과: " + result);
 		}
