@@ -1,5 +1,7 @@
 package j01_출력;
 
+import j17_스태틱.싱글톤.KIA;
+
 public class HelloJava { // 클래스 정의, class 명의 첫 글자는 대문자(->변수명이랑 겹칠 수 있기 때문)
 
 		// 같은 그룹으로 묶기 위해서 들여쓰기 필수
@@ -20,7 +22,10 @@ public class HelloJava { // 클래스 정의, class 명의 첫 글자는 대문�
 		System.out.println("주소: 부산 동래구 사직동");
 		System.out.println("연락처: 010-9988-1916");
 		System.out.println("수업: AWS기반 공공빅데이터 활용 웹개발자 양성");
-
+		
+		System.out.println();
+		KIA.getInstance().printCompanyName();
+		
 	}
 
 }
