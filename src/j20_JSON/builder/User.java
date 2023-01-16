@@ -24,25 +24,25 @@ public class User {
 		private String name;
 		private String email;
 		
-		public UserBuilder username(String username) {
-			this.username = username;
-			return this;
-		}
-		
-		public UserBuilder password(String password) {
-			this.password = password;
-			return this;
-		}
-		
-		public UserBuilder name(String name) {
-			this.name = name;
-			return this;
-		}
-		
-		public UserBuilder email(String email) {
-			this.email = email;
-			return this;
-		}
+//		public UserBuilder username(String username) {
+//			this.username = username;
+//			return this;
+//		}
+//		
+//		public UserBuilder password(String password) {
+//			this.password = password;
+//			return this;
+//		}
+//		
+//		public UserBuilder name(String name) {
+//			this.name = name;
+//			return this;
+//		}
+//		
+//		public UserBuilder email(String email) {
+//			this.email = email;
+//			return this;
+//		}
 		
 		public User build() { // 일반 메소드
 			return new User(username, password, name, email);
