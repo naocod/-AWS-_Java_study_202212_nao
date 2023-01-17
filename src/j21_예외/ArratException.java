@@ -11,12 +11,12 @@ public class ArratException {
 //			for(int i = 0; i < 6; i++) {
 //				System.out.println(nums[i]);
 //			}
-		}catch (IndexOutOfBoundsException e) {
+		}catch (IndexOutOfBoundsException e) { 
 			System.out.println("예외 처리"); // if문과 같이 오류가 나면 catch문이 실행됨
 			// 상위에 Exception 클래스가 있어 업캐스팅되어 처리됨
 		}catch (NullPointerException e) {
 			System.out.println("빈값 처리함");
-		}catch (Exception e) {
+		}catch (Exception e) { // 모든 예외를 포함함
 			System.out.println("예상 못한 예외 처리함"); // 작성된 오류 외의 오류 경우를 잡아줘야 프로그램이 다운되지 않음
 		}
 		
