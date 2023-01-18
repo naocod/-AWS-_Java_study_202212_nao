@@ -118,6 +118,19 @@ public class UserManagementFrame extends JFrame {
 			@Override // 원하는 것만 골라서 오버라이드 가능
 			// 인터페이스는 무조건 구현해야하는데 어댑터를 사용해서 원하는 것만 오버라이드
 			public void mouseClicked(MouseEvent e) {
+				JsonObject loginUser = new JsonObject();
+				loginUser.addProperty("usernameAndEmail", usernameField.getText()); 
+				loginUser.addProperty("password", passwordField.getText());
+				
+				UserService userService = UserService.getInsance();
+				
+				Map<String, String> response = userService.authorize(loginUser.toString());
+				
+				if(response.containsKey("error")) {
+					JOptionPane.showMessageDialog(null, response.get("error"), "error", JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				JOptionPane.showMessageDialog(null, response.get("ok"), "ok", JOptionPane.INFORMATION_MESSAGE);
 				
 			}
 		});
