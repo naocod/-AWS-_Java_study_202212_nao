@@ -20,6 +20,12 @@ public class UserReoisitory {
 	
 	private UserReoisitory() {
 		userDataList = new ArrayList<>();
+		userDataList.add(User.builder()
+				.username("aaa")
+				.password("1234")
+				.name("김준일")
+				.email("aaa@gmail.com")
+				.build());
 	}
 	
 	public void saveUser(User user) {
@@ -31,6 +37,19 @@ public class UserReoisitory {
 		
 		for(User u : userDataList) {
 			if(u.getUsername().equals(username)) {
+				user = u;
+				break;
+			}
+		}
+		
+		return user;
+	}
+	
+	public User findUserByEmail(String email) {
+		User user = null;
+		
+		for(User u : userDataList) {
+			if(u.getEmail().equals(email)) {
 				user = u;
 				break;
 			}

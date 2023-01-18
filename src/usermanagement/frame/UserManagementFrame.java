@@ -5,9 +5,15 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import com.google.gson.JsonObject;
+
+import usermanagement.service.UserService;
+
 import java.awt.CardLayout;
 import java.awt.Color;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import javax.swing.JTextField;
 import java.awt.Font;
@@ -15,8 +21,14 @@ import javax.swing.JPasswordField;
 import javax.swing.JButton;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
 
 public class UserManagementFrame extends JFrame {
+	
+	List<JTextField> loginFields;
+	List<JTextField> registerFields;
 	
 	private CardLayout mainCard;
 	private JPanel mainPanel;
@@ -47,6 +59,9 @@ public class UserManagementFrame extends JFrame {
 	 * Create the frame.
 	 */
 	public UserManagementFrame() {
+		loginFields = new ArrayList<>();
+		registerFields = new ArrayList<>();
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 400, 500);
 		mainPanel = new JPanel();
@@ -81,6 +96,7 @@ public class UserManagementFrame extends JFrame {
 		usernameField.setColumns(10);
 		
 		passwordField = new JPasswordField();
+		passwordField.setHorizontalAlignment(SwingConstants.CENTER);
 		passwordField.setBounds(33, 251, 309, 30);
 		loginPanel.add(passwordField);
 		
@@ -97,6 +113,14 @@ public class UserManagementFrame extends JFrame {
 		loginPanel.add(passwordLabel);
 		
 		JButton loginButton = new JButton("Login");
+		
+		loginButton.addMouseListener(new MouseAdapter() { // addMouseListener 객체는 Component 클래스의 하위이기에 버튼이 아니어도 이벤트 줄 수 있음
+			@Override // 원하는 것만 골라서 오버라이드 가능
+			// 인터페이스는 무조건 구현해야하는데 어댑터를 사용해서 원하는 것만 오버라이드
+			public void mouseClicked(MouseEvent e) {
+				
+			}
+		});
 		loginButton.setBackground(Color.LIGHT_GRAY);
 		loginButton.setFont(new Font("Bodoni MT", Font.BOLD, 18));
 		loginButton.setBounds(33, 311, 309, 37);
@@ -113,6 +137,7 @@ public class UserManagementFrame extends JFrame {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				mainCard.show(mainPanel, "registerPanel");
+				clearFields(loginFields); // 로그인 필드 비움
 			}
 		});
 		signupLink.setHorizontalAlignment(SwingConstants.CENTER);
@@ -177,6 +202,7 @@ public class UserManagementFrame extends JFrame {
 		registerPanel.add(registerPasswordLabel);
 		
 		registerPasswordField = new JPasswordField();
+		registerPasswordField.setHorizontalAlignment(SwingConstants.CENTER);
 		registerPasswordField.setBounds(31, 191, 309, 30);
 		registerPanel.add(registerPasswordField);
 		
@@ -205,9 +231,52 @@ public class UserManagementFrame extends JFrame {
 		registerPanel.add(registerEmailField);
 		
 		JButton registerButton = new JButton("Register");
+		registerButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) { // 선언(정의)만함 -> 동작이 일어났을 때
+				JsonObject userJson = new JsonObject();
+				userJson.addProperty("username", registerUsernameField.getText());
+				userJson.addProperty("password", registerPasswordField.getText());
+				userJson.addProperty("name", registerNameField.getText());
+				userJson.addProperty("email", registerEmailField.getText());
+				
+//				System.out.println(userJson.toString());
+				
+				UserService userService = UserService.getInsance();
+				
+				Map<String, String> response = userService.register(userJson.toString());
+				
+				if(response.containsKey("error")) { // 키값안에 들어있는지 확인
+					JOptionPane.showMessageDialog(null, response.get("error"), "error", JOptionPane.ERROR_MESSAGE);
+					return; // 이벤트에 대한 리턴
+				}
+				
+				JOptionPane.showMessageDialog(null, response.get("ok"), "ok", JOptionPane.INFORMATION_MESSAGE);
+				mainCard.show(mainPanel, "loginPanel");
+				clearFields(registerFields); // 회원가입 필드 비움
+				
+			}
+		});
 		registerButton.setFont(new Font("Bodoni MT", Font.BOLD, 18));
 		registerButton.setBackground(Color.LIGHT_GRAY);
 		registerButton.setBounds(31, 364, 309, 37);
 		registerPanel.add(registerButton);
+		
+		loginFields.add(usernameField);
+		loginFields.add(passwordField);
+		
+		registerFields.add(registerUsernameField);
+		registerFields.add(registerPasswordField);
+		registerFields.add(registerNameField);
+		registerFields.add(registerEmailField);
+	} // 생성자
+	
+	private void clearFields(List<JTextField> textFields) {
+		for(JTextField field : textFields) {
+			if(field.getText().isEmpty()) { // 스페이스바도 텍스트로 인식해서 비원줌
+				continue;
+			}
+			field.setText("");
+		}
 	}
 }
