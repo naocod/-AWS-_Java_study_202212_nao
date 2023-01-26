@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6e51b1e6-535c-4712-9b6f-386898b19628" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/j23_database/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/DBConnectionMgr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/j23_database/RoleInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/RoleInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/j23_database/UserInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/UserInsert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usermanagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usermanagement/frame/UserManagementFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/frame/UserManagementFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usermanagement/repository/UserReoisitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/repository/UserRepoisitoryArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.aws/javastudy/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.aws/javastudy/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/j23_database/RoleInsert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/j23_database/RoleInsert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/j23_database/UserInsert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/j23_database/UserInsert.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/entity/User$UserBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/repository/UserReoisitory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/service/UserService.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2Kr9vMgUbRJiFhMyLj4UQAyMqSq" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6e51b1e6-535c-4712-9b6f-386898b19628" name="Changes" comment="" />
+      <created>1674722068274</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1674722068274</updated>
+      <workItem from="1674722070833" duration="421000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

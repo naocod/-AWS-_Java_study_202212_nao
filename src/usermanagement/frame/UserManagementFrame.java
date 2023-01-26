@@ -244,6 +244,7 @@ public class UserManagementFrame extends JFrame {
 		registerPanel.add(registerEmailField);
 		
 		JButton registerButton = new JButton("Register");
+		
 		registerButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) { // 선언(정의)만함 -> 동작이 일어났을 때

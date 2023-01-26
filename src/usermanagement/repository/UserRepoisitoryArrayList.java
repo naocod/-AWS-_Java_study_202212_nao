@@ -7,20 +7,20 @@ import org.mindrot.jbcrypt.BCrypt;
 
 import usermanagement.entity.User;
 
-public class UserReoisitory {
+public class UserRepoisitoryArrayList {
 
 	private List<User> userDataList;
 	
-	private static UserReoisitory instance;
+	private static UserRepoisitoryArrayList instance;
 	
-	public static UserReoisitory getInstance() {
+	public static UserRepoisitoryArrayList getInstance() {
 		if(instance == null) {
-			instance = new UserReoisitory();
+			instance = new UserRepoisitoryArrayList();
 		}
 		return instance;
 	}
 	
-	private UserReoisitory() {
+	private UserRepoisitoryArrayList() {
 		userDataList = new ArrayList<>();
 		userDataList.add(User.builder()
 				.username("aaa")

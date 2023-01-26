@@ -21,6 +21,7 @@ public class UserInsert {
 	}
 	
 	public int saveUser(User user) {
+		// freeConnection할때 객체를 사용해야하기 때문에 try-catch문 밖으로 뺌
 		int successCount = 0; // 결과 return을 위해 전역으로 뺌
 		
 		String sql = null; // sql 구문 작성을 위한 변수 선언
@@ -29,7 +30,7 @@ public class UserInsert {
 		ResultSet resultSet = null; // key 값을 들고오기 위한 변수
 		
 		try {
-			connection = pool.getConnection();
+			connection = pool.getConnection(); // 프리커넥션 > 연결 끊기 위한 용도
 			
 			sql = "insert into user_mst\r\n"
 					+ "values (0, ?, ?, ?, ?)"; // ?는 표기용으로 사용됨
@@ -81,7 +82,9 @@ public class UserInsert {
 			
 			for(int i = 0; i < roles.size(); i++) {
 				
-				sql += "(0, ?, ?)";
+				sql += "(0, ?, ?)"; // 1 2
+//				sql += "(0, ?, ?)"; // 3 4
+//				sql += "(0, ?, ?)"; // 5 6
 				
 				if(i < roles.size() - 1) { // sql문에 ,가 붙어야하는데 마지막에는 안붙어야하니까
 					sql += ","; 
@@ -92,12 +95,12 @@ public class UserInsert {
 //			preparedStatement.setInt(3, roles.get(1));
 //			preparedStatement.setInt(4, user.getUserId());
 			
-			for(int i = 0; i < roles.size(); i++) {
-				preparedStatement.setInt((i * 2) + 1, roles.get(i));
+			for(int i = 0; i < roles.size(); i++) { 
+				preparedStatement.setInt((i * 2) + 1, roles.get(i)); 
 				preparedStatement.setInt((i * 2) + 2, user.getUserId());
 			}
 			
-			successCount = preparedStatement.executeUpdate();
+			successCount = preparedStatement.executeUpdate(); // 반복을 돌린 후 update
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
