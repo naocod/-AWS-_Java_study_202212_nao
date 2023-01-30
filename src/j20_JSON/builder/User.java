@@ -43,10 +43,10 @@ public class User {
 ////			this.email = email;
 ////			return this;
 ////		}
-//		
-//		public User build() { // 일반 메소드
-//			return new User(username, password, name, email);
-//		}
+////		
+////		public User build() { // 일반 메소드
+////			return new User(username, password, name, email);
+////		}
 //		
 //		// static안에 static은 생성안해도 사용 가능하지만 build는 일멘 메소드이기 때문에 생성해야지만 사용 가능
 //	}
