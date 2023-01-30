@@ -11,7 +11,7 @@ class Java extends Program {
 		System.out.println("자바 프로그램을 개발합니다.");
 	}
 	
-	public void garbaegeCollection() {
+	public void garbageCollection() {
 		System.out.println("메모리를 정리합니다.");
 	}
 	
@@ -39,7 +39,7 @@ public class Casting {
 //		for(int i = 0; i < programs.length; i++) {
 //			if(i == 0) {
 //				programs[0].develop();
-//				((Java) programs[0]).garbaegeCollection();
+//				((Java) programs[0]).garbageCollection();
 //
 //			}else {
 //				programs[1].develop();
@@ -52,7 +52,7 @@ public class Casting {
 			programs[i].develop();
 			if(programs[i].getClass() == Java.class) {
 					Java java = (Java) programs[i];
-					java.garbaegeCollection();
+					java.garbageCollection();
 			}else if(programs[i].getClass() == C.class) {
 				C c = (C) programs[i];
 				c.defineStructure();
