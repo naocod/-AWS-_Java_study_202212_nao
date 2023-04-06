@@ -5,22 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e51b1e6-535c-4712-9b6f-386898b19628" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/j23_database/DBConnectionMgr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/DBConnectionMgr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/j23_database/RoleInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/RoleInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/j23_database/UserInsert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/j23_database/UserInsert.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usermanagement/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usermanagement/frame/UserManagementFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/frame/UserManagementFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usermanagement/repository/UserReoisitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/repository/UserRepoisitoryArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usermanagement/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usermanagement/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javastudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.aws/javastudy/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/maven/com.aws/javastudy/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/j23_database/RoleInsert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/j23_database/RoleInsert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/j23_database/UserInsert.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/j23_database/UserInsert.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/entity/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/frame/UserManagementFrame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/repository/UserReoisitory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/usermanagement/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/usermanagement/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/client/ChattingClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/client/ClientRecive.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/client/ClientRecive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/server/ConnectedSocket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/server/ConnectedSocket.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/simplechatting2/server/ServerApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/simplechatting2/server/ServerApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +23,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectId" id="2Kr9vMgUbRJiFhMyLj4UQAyMqSq" />
   <component name="ProjectViewState">
@@ -39,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -56,6 +58,7 @@
       <option name="presentableId" value="Default" />
       <updated>1674722068274</updated>
       <workItem from="1674722070833" duration="421000" />
+      <workItem from="1676923398705" duration="724000" />
     </task>
     <servers />
   </component>
